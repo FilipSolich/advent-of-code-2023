@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+  build:
+    desc: Build all binaries
+    aliases: [b]
+    cmds:
+      - go build -o bin/ ./...
+
+  clean:
+    desc: Remove all binaries
+    aliases: [c]
+    cmds:
+      - go clean
+      - rm -rf bin
